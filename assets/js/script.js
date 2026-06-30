@@ -1,9 +1,3 @@
-/*
-  JavaScript principal do projeto DN Gamer Store
-  Recursos utilizados: variáveis, constantes, operadores, condicionais, laços,
-  funções, classe, eventos, DOM, LocalStorage, Bootstrap JS e JQuery.
-*/
-
 class Carrinho {
   constructor() {
     this.itens = JSON.parse(localStorage.getItem("dnCarrinho")) || [];
@@ -94,7 +88,7 @@ function configurarCupom() {
   $("#btnCupom").on("click", function () {
     const indice = Math.floor(Math.random() * cupons.length);
     const cupomEscolhido = cupons[indice];
-    $("#resultadoCupom").text(`Cupom gerado: ${cupomEscolhido} — use na finalização da compra.`);
+    $("#resultadoCupom").text(`Seu cupom especial: ${cupomEscolhido} — use na finalização da compra.`);
   });
 }
 
